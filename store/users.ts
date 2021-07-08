@@ -1,5 +1,5 @@
 import { Module, VuexModule, Action, Mutation } from 'vuex-module-decorators'
-import { $axios } from '~/utils/api'
+// import { $axios } from '~/utils/api'
 
 type User = {
   id: number
@@ -21,7 +21,7 @@ export default class UserModule extends VuexModule {
   }
 
   @Action
-  async getUsers() {
+  getUsers() {
     // const users = $axios.$get('/users')
     const users = [
       {
