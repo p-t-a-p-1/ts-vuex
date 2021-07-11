@@ -1,3 +1,6 @@
+import Sass from 'sass'
+import Fiber from 'fibers'
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -14,10 +17,10 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: [{ src: '~/assets/scss/common.scss' }],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/axios-accessor'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -38,7 +41,16 @@ export default {
   axios: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    loaders: {
+      scss: {
+        implementation: Sass,
+        sassOptions: {
+          fiber: Fiber,
+        },
+      },
+    },
+  },
 
   typescript: {
     typeCheck: {

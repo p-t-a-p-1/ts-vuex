@@ -1,12 +1,12 @@
 import { Store } from 'vuex'
 import { getModule } from 'vuex-module-decorators'
-import Users from '~/store/users'
+import Posts from '~/store/posts'
 
 // eslint-disable-next-line import/no-mutable-exports
-let usersStore: Users
+let postsStore: Posts
 
 function initialiseStores(store: Store<any>): void {
-  usersStore = getModule(Users, store)
+  postsStore = getModule(Posts, store)
 }
 
-export { initialiseStores, usersStore }
+export { initialiseStores, postsStore }
