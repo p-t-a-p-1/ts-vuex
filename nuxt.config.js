@@ -47,4 +47,24 @@ export default {
       },
     },
   },
+
+  storybook: {
+    // 追加のアドオンなどあれば
+    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+    // ポート指定
+    port: 5555,
+    // 背景色や表示位置、デバイスの設定など
+    parameters: {
+      // 背景色：デフォルトの色を使う場合
+      backgrounds: {
+        default: 'dark', // light or dark
+      },
+      // Description, Default, Controlsカラムの表示
+      controls: {
+        expanded: true,
+      },
+      // 表示位置
+      layout: 'centered', // centered:中央表示, padded:コンポーネントに余白付与, fullscreen:幅いっぱい
+    },
+  },
 }
