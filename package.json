@@ -14,6 +14,8 @@
     "@nuxtjs/axios": "^5.13.1",
     "core-js": "^3.9.1",
     "nuxt": "^2.15.3",
+    "vue-class-component": "^7.2.6",
+    "vue-property-decorator": "^9.1.2",
     "vuex-module-decorators": "^1.0.1"
   },
   "devDependencies": {
@@ -28,8 +30,15 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-vue": "^7.7.0",
+<<<<<<< HEAD
     "postcss": "^8.3.5",
     "prettier": "^2.2.1",
     "ts-node": "^10.1.0"
+=======
+    "fibers": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sass": "^1.35.2",
+    "sass-loader": "10.1.1"
+>>>>>>> fb3154e4d0eaf1e5610ebabeeda82dcc5bf0bbae
   }
 }
